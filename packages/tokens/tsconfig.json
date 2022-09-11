@@ -1,0 +1,5 @@
+{
+  "extends": "@ignite-ui/ts-config/base.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}

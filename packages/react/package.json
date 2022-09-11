@@ -1,0 +1,34 @@
+{
+  "name": "@ignite-ui/react",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
+    "lint": "eslint src/**/*.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "devDependencies": {
+    "@ignite-ui/eslint-config": "*",
+    "@ignite-ui/ts-config": "*",
+    "@ignite-ui/tokens": "*",
+    "@types/react": "^18.0.19",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "tsup": "^5.12.9",
+    "typescript": "^4.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@stitches/react": "^1.2.8"
+  }
+}
