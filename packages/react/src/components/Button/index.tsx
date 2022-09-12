@@ -8,3 +8,5 @@ export interface ButtonProps {
 export function Button(props: ButtonProps) {
   return <ButtonContainer {...props} />
 }
+
+Button.displayName = 'Button'
