@@ -2,7 +2,9 @@ name: Deploy docs
 
 on: 
   push:
-    paths: ["apps/docs/**"]
+    # paths: ["apps/docs/**"]
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
@@ -16,7 +18,7 @@ jobs:
           node-version: 16
 
       - run: npm ci
-      
+
       - run: npm run build
 
       - name: Deploy storybook to GitHub Pages
