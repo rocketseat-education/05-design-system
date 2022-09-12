@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "start-storybook -p 6006",
-    "build": "build-storybook --docs -o docs",
+    "build": "build-storybook -o docs",
     "preview-storybook": "serve docs",
     "deploy-storybook": "storybook-to-ghpages",
     "clean": "rm -rf .turbo && rm -rf node_modules",
