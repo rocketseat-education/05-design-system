@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "start-storybook -p 6006",
-    "build": "build-storybook --docs",
-    "preview-storybook": "serve storybook-static",
+    "build": "build-storybook --docs -o docs",
+    "preview-storybook": "serve docs",
     "deploy-storybook": "storybook-to-ghpages",
     "clean": "rm -rf .turbo && rm -rf node_modules",
     "test": "vitest",
