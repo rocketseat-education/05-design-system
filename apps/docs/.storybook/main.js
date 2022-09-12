@@ -2,30 +2,19 @@ const path = require("path");
 
 module.exports = {
   stories: [
-    "../pages/home.stories.mdx",
-    "../pages/**/*.stories.mdx",
-    "../stories/**/*.stories.tsx"
+    "../src/pages/home.stories.mdx",
+    "../src/pages/**/*.stories.mdx",
+    "../src/stories/**/*.stories.tsx"
   ],
-  addons: ["@storybook/addon-links", "@storybook/addon-essentials"],
+  addons: [
+    "@storybook/addon-links", 
+    "@storybook/addon-essentials",
+  ],
   framework: "@storybook/react",
   core: {
     builder: "@storybook/builder-vite",
   },
-  async viteFinal(config, { configType }) {
-    // customize the Vite config here
-    return {
-      ...config,
-      resolve: {
-        alias: [
-          {
-            find: "@acme/core",
-            replacement: path.resolve(
-              __dirname,
-              "../../../packages/acme-core/"
-            ),
-          },
-        ],
-      },
-    };
-  },
+  features: {
+    storyStoreV7: true,
+  }
 };

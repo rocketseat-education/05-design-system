@@ -1,8 +1,7 @@
 import { styled } from '../../styles'
 
 export const ButtonContainer = styled('button', {
-  px: '$4',
-  py: '$2',
+  padding: '$2 $4',
   color: '#FFF',
   background: '$primary',
   borderRadius: '$xs',

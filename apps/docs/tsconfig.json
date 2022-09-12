@@ -1,0 +1,5 @@
+{
+  "extends": "@ignite-ui/ts-config/react.json",
+  "include": ["."],
+  "exclude": ["dist", "build", "node_modules"]
+}
