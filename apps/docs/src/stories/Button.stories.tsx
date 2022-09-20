@@ -1,5 +1,6 @@
 import { StoryObj, Meta } from '@storybook/react'
 import { Button, ButtonProps } from '@ignite-ui/react'
+import { ArrowRight } from 'phosphor-react'
 
 export default {
   title: 'Form/Button',
@@ -16,25 +17,49 @@ export default {
 
 export const Primary: StoryObj<ButtonProps> = {
   args: {
-    children: 'Send',
+    children: 'Confirmar',
   },
 }
 
-export const Variant1: StoryObj<ButtonProps> = {
+export const Secondary: StoryObj<ButtonProps> = {
   args: {
-    children: 'Variant1',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story: 'Primeira variante desse componente!',
-      },
-    },
+    children: (
+      <>
+        Conectar
+        <ArrowRight weight="bold" />
+      </>
+    ),
+    variant: 'secondary',
   },
 }
 
-export const Variant2: StoryObj<ButtonProps> = {
+export const Tertiary: StoryObj<ButtonProps> = {
   args: {
-    children: 'Variant2',
+    children: 'Cancelar',
+    variant: 'tertiary',
+  },
+}
+
+export const WithIcon: StoryObj<ButtonProps> = {
+  args: {
+    children: (
+      <>
+        Próximo passo
+        <ArrowRight weight="bold" />
+      </>
+    ),
+  },
+}
+
+export const Small: StoryObj<ButtonProps> = {
+  args: {
+    children: 'Selecionar foto',
+    size: 'sm',
+  },
+}
+
+export const Disabled: StoryObj<ButtonProps> = {
+  args: {
+    disabled: true,
   },
 }

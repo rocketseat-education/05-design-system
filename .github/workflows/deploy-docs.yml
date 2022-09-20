@@ -2,7 +2,6 @@ name: Deploy docs
 
 on: 
   push:
-    # paths: ["apps/docs/**"]
     branches:
       - main
 
