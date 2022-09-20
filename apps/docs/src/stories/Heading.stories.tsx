@@ -6,9 +6,6 @@ export default {
   component: Heading,
   args: {
     children: 'Bem-vindo',
-    css: {
-      color: '#e1e1e6',
-    },
   },
 } as Meta<HeadingProps>
 

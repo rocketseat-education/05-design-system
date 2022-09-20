@@ -6,9 +6,6 @@ export default {
   component: Text,
   args: {
     children: 'Enviar',
-    css: {
-      color: '#e1e1e6',
-    },
   },
 } as Meta<TextProps>
 

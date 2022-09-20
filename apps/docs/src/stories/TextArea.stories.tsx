@@ -9,15 +9,10 @@ export default {
       <Box
         as="label"
         css={{
-          padding: '$4',
-          borderRadius: '$md',
-          backgroundColor: '$gray800',
-          border: '1px solid $gray600',
           display: 'flex',
           flexDirection: 'column',
           gap: '$2',
           margin: '0 auto',
-          maxWidth: 480,
         }}
       >
         <Text size="sm">Observações</Text>

@@ -12,6 +12,11 @@ export const TextInputContainer = styled('div', {
   '&:has(input:focus)': {
     borderColor: '$ignite300',
   },
+
+  '&:has(input:disabled)': {
+    opacity: 0.5,
+    cursor: 'not-allowed',
+  },
 })
 
 export const Input = styled('input', {
@@ -21,9 +26,14 @@ export const Input = styled('input', {
   fontWeight: '$regular',
   background: 'transparent',
   border: 0,
+  width: '100%',
 
   '&:focus': {
     outline: 'none',
+  },
+
+  '&:disabled': {
+    cursor: 'not-allowed',
   },
 
   '&:placeholder': {

@@ -9,15 +9,10 @@ export default {
       <Box
         as="label"
         css={{
-          padding: '$4',
-          borderRadius: '$md',
-          backgroundColor: '$gray800',
-          border: '1px solid $gray600',
           display: 'flex',
           flexDirection: 'column',
           gap: '$2',
           margin: '0 auto',
-          maxWidth: 480,
         }}
       >
         <Text size="sm">Nome de usuário</Text>
@@ -30,6 +25,13 @@ export default {
 export const Primary: StoryObj<TextInputProps> = {
   args: {
     placeholder: 'Digite seu nome de usuário',
+  },
+}
+
+export const Disabled: StoryObj<TextInputProps> = {
+  args: {
+    placeholder: 'Digite seu nome de usuário',
+    disabled: true,
   },
 }
 
