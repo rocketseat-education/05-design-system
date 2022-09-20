@@ -2,13 +2,12 @@ import { styled } from '../../styles'
 
 export const ButtonContainer = styled('button', {
   all: 'unset',
-  padding: '$3 $4',
   borderRadius: '$sm',
   fontSize: '$sm',
   fontWeight: '$medium',
   fontFamily: '$default',
   textAlign: 'center',
-  minWidth: '5rem',
+  minWidth: 120,
   boxSizing: 'border-box',
 
   display: 'flex',
@@ -19,6 +18,11 @@ export const ButtonContainer = styled('button', {
   transition: 'background-color 0.2s, color 0.2s',
 
   cursor: 'pointer',
+
+  svg: {
+    width: '$4',
+    height: '$4',
+  },
 
   variants: {
     variant: {
@@ -65,10 +69,12 @@ export const ButtonContainer = styled('button', {
     },
     size: {
       md: {
-        padding: '$3 $4',
+        padding: '0 $4',
+        height: 46,
       },
       sm: {
-        padding: '$2 $4',
+        padding: '0 $4',
+        height: 38,
       },
     },
   },

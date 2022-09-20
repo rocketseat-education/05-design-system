@@ -16,6 +16,8 @@ export default {
           display: 'flex',
           alignItems: 'center',
           gap: '$3',
+          margin: '0 auto',
+          maxWidth: 480,
         }}
       >
         {Story()}
