@@ -1,0 +1,2 @@
+import{B as o,T as r}from"./index.2fa65a0f.js";import{j as t}from"./jsx-runtime.37ef8b16.js";import"./index.4fb7675e.js";import"./iframe.2c0ec643.js";import"./index.f203a7d5.js";const m={title:"Surfaces/Box",component:o,args:{children:t(r,{children:"Testando o elemento Box"})},argTypes:{children:{control:{type:null}}}},p={},c=["Primary"];export{p as Primary,c as __namedExportsOrder,m as default};
+//# sourceMappingURL=Box.stories.258ba15e.js.map
